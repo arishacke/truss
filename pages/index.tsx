@@ -19,8 +19,7 @@ const Home: NextPage = () => {
         <ConnectButton />
 
         <h1 className={styles.title}>
-          Welcome to <a href="">RainbowKit</a> + <a href="">wagmi</a> +{' '}
-          <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="#">visit Trustfarming</a>
         </h1>
         
       </main>
