@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import '@rainbow-me/rainbowkit/styles.css';
-import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { getDefaultWallets, RainbowKitProvider, midnightTheme  } from '@rainbow-me/rainbowkit';
 import type { AppProps } from 'next/app';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
@@ -43,8 +43,9 @@ const wagmiConfig = createConfig({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider chains={chains} theme={midnightTheme()} coolMode>
         <Component {...pageProps} />
+        
       </RainbowKitProvider>
     </WagmiConfig>
   );
